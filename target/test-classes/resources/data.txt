@@ -1,0 +1,4 @@
+name=Quantum Physics
+isbn=lkiert
+aisle=25123
+author=Prem
