@@ -1,0 +1,232 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-10T17:56:45.284Z",
+        "line": 14,
+        "name": "Verify if we are able to add book using AddBook API",
+        "description": "",
+        "id": "validating-books-api-s;verify-if-we-are-able-to-add-book-using-addbook-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2401518500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Json payload to add the book with \"Atomic Habits\" \"atmttd\" 22776 \"James Clear\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Atomic Habits\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"atmttd\"",
+                  "offset": 50
+                },
+                {
+                  "val": "22776",
+                  "offset": 59
+                },
+                {
+                  "val": "\"James Clear\"",
+                  "offset": 65
+                }
+              ],
+              "location": "stepDefinitions.stepDefinition.json_payload_to_add_the_book_with(java.lang.String,java.lang.String,java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1965785800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"AddBookAPI\" with \"POST\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddBookAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefinitions.stepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57962000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "location": "stepDefinitions.stepDefinition.the_api_call_got_success_with_status_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1010378300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"Msg\" in response body is \"successfully added\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Msg\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"successfully added\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.stepDefinition.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1938168800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify if book_id created maps to \"Atomic Habits\" using \"GetBookAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Atomic Habits\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"GetBookAPI\"",
+                  "offset": 56
+                }
+              ],
+              "location": "stepDefinitions.stepDefinition.verify_if_book_id_created_maps_to_using(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddBook"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-10T17:56:52.820Z",
+        "before": [
+          {
+            "result": {
+              "duration": 999700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.Delete_method_preRequite()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Verify if data is being deleted using DeleteBook API",
+        "description": "",
+        "id": "validating-books-api-s;verify-if-data-is-being-deleted-using-deletebook-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Delete method payload",
+            "match": {
+              "location": "stepDefinitions.stepDefinition.delete_method_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 109928100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user calls \"DeleteBookAPI\" with \"POST\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeleteBookAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinitions.stepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "location": "stepDefinitions.stepDefinition.the_api_call_got_success_with_status_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19989000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "\"msg\" in response body is \"book is successfully deleted\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"msg\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"book is successfully deleted\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.stepDefinition.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeleteBook"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Books API\u0027s",
+    "description": "",
+    "id": "validating-books-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/bookValidation.feature",
+    "tags": []
+  }
+]

@@ -11,13 +11,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "The Ride of a Lifetime",
-    "isbn": "trotl",
-    "aisle": 33331,
-    "author": "Robert Iger"
+    "name": "Atomic Habits",
+    "isbn": "atmttd",
+    "aisle": 22776,
+    "author": "James Clear"
 }
 HTTP/1.1 200 OK
-Date: Thu, 05 Aug 2021 17:49:16 GMT
+Date: Tue, 10 Aug 2021 18:02:39 GMT
 Server: Apache
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -30,13 +30,13 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "Msg": "successfully added",
-    "ID": "trotl33331"
+    "ID": "atmttd22776"
 }
 Request method:	GET
-Request URI:	http://216.10.245.166/Library/GetBook.php?ID=trotl33331
+Request URI:	http://216.10.245.166/Library/GetBook.php?ID=atmttd22776
 Proxy:			<none>
 Request params:	<none>
-Query params:	ID=trotl33331
+Query params:	ID=atmttd22776
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -45,7 +45,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Thu, 05 Aug 2021 17:49:18 GMT
+Date: Tue, 10 Aug 2021 18:02:42 GMT
 Server: Apache
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -58,10 +58,10 @@ Content-Type: application/json;charset=UTF-8
 
 [
     {
-        "book_name": "The Ride of a Lifetime",
-        "isbn": "trotl",
-        "aisle": "33331",
-        "author": "Robert Iger"
+        "book_name": "Atomic Habits",
+        "isbn": "atmttd",
+        "aisle": "22776",
+        "author": "James Clear"
     }
 ]
 Request method:	POST
@@ -77,10 +77,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "ID": "trotl33331"
+    "ID": "atmttd22776"
 }
 HTTP/1.1 200 OK
-Date: Thu, 05 Aug 2021 17:49:18 GMT
+Date: Tue, 10 Aug 2021 18:02:42 GMT
 Server: Apache
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST

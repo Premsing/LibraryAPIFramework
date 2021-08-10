@@ -1,6 +1,6 @@
 Feature: Validating Books API's
 
-@AddPlace
+@AddBook
 Scenario Outline: Verify if we are able to add book using AddBook API
 	Given Json payload to add the book with "<name>" "<isbn>" <aisle> "<author>"
 	When user calls "AddBookAPI" with "POST" HTTP request
@@ -11,9 +11,9 @@ Scenario Outline: Verify if we are able to add book using AddBook API
 	 
 Examples:
 	| name 		    | isbn   | aisle | author 	   |
-	| Atomic Habits | atmhbt | 22220 | James Clear |
+	| Atomic Habits | atmttd | 22776 | James Clear |
 	
-@DeletePlace
+@DeleteBook
 Scenario: Verify if data is being deleted using DeleteBook API
   	Given Delete method payload
   	When user calls "DeleteBookAPI" with "POST" HTTP request
